@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+.clear-fix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box {
+    width: 200px;
+    z-index: 1;
+    padding: 8px 12px;
+    left: 0;
+    top: 120%;
+    box-shadow: 0 0 2px 1px #ccc;
+}
+
+.box::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-width: 12px;
+    border-color: transparent transparent #f8f9fa transparent;
+    border-style: solid;
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    z-index: -1;
+}
+
+.border-radius-5px {
+    border-radius: 5px;
+}
+
+.bg-bold {
+    background-color: #ccc
+}
+
+/* ====== HEADING ========== */
+
+header {
+    padding: 12px 0;
+    background-color: rgb(34, 142, 216);
+}
+
+header i {
+    font-size: 30px;
+}
+
+header div[class*='col-']
+{
+    margin: 8px 0;
+}
+
+.heading-img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.search-box {
+    height: 40px;
+}
+
+.txt-search {
+    width: 74%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.btn-search:hover {
+    color: white;
+}
+
+.btn-search {
+    background-color: rgb(13, 92, 182);
+    color: #fff;
+    width: 24%;
+    height: 101%;
+    border-radius: 0;
+    position: relative;
+    top: -2px;
+    left: -4px;
+    padding: 3px;
+    font-size: 0.85rem;
+}
+
+.btn-search i {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.span-text {
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart .number {
+    color: black;
+    background-color: rgb(252, 236, 95);
+    padding: 0 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -12px;
+}
+
+/* Navbar */
+
+#collapsibleNavbar .nav-link {
+    font-size: 14px;
+    color: black;
+}
+
+#collapsibleUser .btn {
+    width: 100%;
+    margin: 4px 0;
+}
+
+/* ========= SLIDER =========== */
+.slider img{
+    height: 200px;
+}
+
+/* ========= FOOTER ========== */
+
+footer {
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(34, 142, 216);
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer h3:hover {
+    color: rgb(80, 188, 238);
+}
+
+footer ul {
+    margin: auto;
+    list-style: none;
+    margin-left: 0;
+}
+
+footer ul li {
+    line-height: 30px;
+    color: #fff;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(80, 188, 238);
+}
+
+.mangXaHoi a {
+    color: rgb(180, 192, 197);
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.mangXaHoi a:hover {
+    color: rgb(80, 188, 238);
+}
+
+#emailNhanTin::-webkit-input-placeholder {
+    font-size: 14px;
+    color: rgb(88, 85, 90);
+}
+
+/* contact bar */
+.contact-bar{
+    right: 20px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 998;
+    margin-bottom:0
+}
+
+.contact-bar li{
+    width: 44px;
+    height: 46px;
+    overflow: hidden;
+     margin-bottom: 0;
+    list-style: none;
+    }
+
+.contact-bar li.facebook{
+    margin-bottom: 8px;
+    background: url(https://giuseart.com/wp-content/uploads/2020/03/fb.png);
+    background-repeat: no-repeat;
+    }
+    .contact-bar li.zalo{
+    background: url(https://giuseart.com/wp-content/uploads/2020/03/zl.png);    background-repeat: no-repeat;
+    }
+
+.contact-bar li a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    }
+
+/* Acount */
+label {
+    margin:  0;
+}
+
+.birth-day {
+    width: 30%;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.area {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.password-change {
+    display: none;
+}
+
+.menu li a {
+    color: rgb(68, 67, 67);
+    padding: 8px 0;
+}
+
+.menu li:hover {
+    background-color: #ccc;
+}
+
+.menu li i {
+    padding: 0 20px;
+}
+
+.user-name i {
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.user-name .dec {
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.user-name #name {
+    font-size: 1.25rem;
+}
+
+.modal-content {
+    width: 600px;
+}

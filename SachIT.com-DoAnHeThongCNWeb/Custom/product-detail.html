@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sách</title>
+  <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <script src="../jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="../bootstrap-4.6.0-dist/js/bootstrap.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="../Custom/assets/css/style.css">
+  <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <link rel="stylesheet" href="../Custom/assets/css/shoping-cart.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="mb-3">
+    <div class="container">
+      <div class="row align-items-center text-md-center">
+        <!-- Home image -->
+        <div class="col-md-1">
+          <a href="./index.html" class="home-link">
+            <img src="./images/logo.png" alt="" class="heading-img bg-white">
+          </a>
+        </div>
+        <!-- Category -->
+        <div class="col-md-1 position-relative">
+          <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fas fa-bars text-white"></i>
+            <span class="text-white span-text">Danh mục</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Tất cả sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Lập trình web</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Giải thuật</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search box -->
+        <div class="col-md-8">
+          <div class="search-box">
+            <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
+            <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
+          </div>
+        </div>
+        <!-- User -->
+        <div class="col-md-1">
+          <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleUser">
+            <i class="far fa-user text-white"></i>
+            <span class="text-white span-text">Tài khoản</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a href="account.html" class="btn btn-warning">Thông tin tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="btn btn-primary">Về chúng tôi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="col-md-1">
+          <a data-toggle="modal" data-target="#thongTinCart" id="btn-cart" href="shoping-cart.html"
+            class="box-link position-relative d-inline-block">
+            <span class="cart">
+              <i class="fas fa-shopping-cart text-white">
+              </i>
+              <span id="num-cart" class="number">3</span>
+            </span>
+            <span class="text-white span-text">Giỏ hàng</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 product_sidebar">
+        <h2 class="danhmuc">DANH MỤC</h2>
+        <ul class="list-group">
+          <a href="./products.html">
+            <li class="list-group-item">Tất cả sản phẩm</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Sản phẩm bán chạy</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Ngôn ngữ lập trình</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Trí tuệ nhân tạo</li>
+          </a>
+        </ul>
+        <img class="left-img-ad" src="../Custom/images/love-book.jpg" alt="">
+        <img class="left-img-ad" src="../Custom/images/love-book2.png" alt="">
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-6 book_detail_pics">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner ">
+                <div class="carousel-item active book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="book_detail">
+              <h4 class="book_detail_tit">
+                The clean code.
+              </h4>
+
+              <span class="book_detail_pri">
+                200.000 VND
+              </span>
+
+              <p class="book_detail_txt">
+                Robert Martins Clean Code Agile Software Craftmanship.
+              </p>
+            </div>
+            <!-- <form class="product_detail_frm"> -->
+            <div class="select_wrapper">
+              <label for="soLuong">Số lượng</label>
+              <input type="number" min="1" value="1" class="product_detail_item_quantity">
+            </div>
+            <div class="row product_detail_btn">
+              <div class="col-md-6">
+                <button id="add_to_cart" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Thêm vào
+                  giỏ</button>
+              </div>
+              <div class="col-md-6">
+                <a href="shoping-cart.html">
+                  <button id="buy_now" class="btn btn-warning"><i class="fas fa-check-circle"></i> Mua ngay</button>
+                </a>
+              </div>
+            </div>
+            <!-- </form> -->
+            <div class="product_detail_icon_mangXH">
+              <a href="#" class="product_detail_icon_mangXH_FB" style="color: rgb(18, 18, 207);"
+                data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="#" class="product_detail_icon_mangXH_TW" style="color: rgba(29,161,242,1.00);"
+                data-tooltip="Twitter">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+
+              <a href="#" class="product_detail_icon_mangXH_GG" style="color: rgb(146, 41, 59);"
+                data-tooltip="Google Plus">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mota_binhluan">
+          <h6>Mô tả sản phẩm</h6>
+          <hr>
+          <p>Robert Cecil Martin, thường được gọi là "Uncle Bob", người Mỹ. Ông là một kỹ sư phần mềm, người tư vấn, và
+            là tác giả của nhiều cuốn best-seller. Ông được công nhận nhiều nhất vì đã phát triển nhiều nguyên tắc thiết
+            kế phần mềm và là người sáng lập ra Tuyên ngôn Agile rất có ảnh hưởng trong giới phát triển phần mềm.
+
+            Martin là tác giả của nhiều cuốn sách và các bài báo trên tạp chí. Ông từng là tổng biên tập của tạp chí C++
+            Report và từng là chủ tịch đầu tiên của Agile Alliance.</p>
+          <h6>Bình luận</h6>
+          <hr>
+          <div class="user_input_comment">
+            <img src="./images/user_avatar3.png" alt="">
+            <textarea name="" id="" cols="80" rows="2" placeholder="Thêm bình luận..."></textarea>
+            <hr>
+          </div>
+          <div class="product_detail_binhluan">
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar.png" alt="">
+                <a href="#">Thanh Nhã</a>
+
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Nguyên bộ bao nhiêu tiền vậy shop?</span>
+              </div>
+            </div>
+          </div>
+          <div class="product_detail_binhluan">
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar2.png" alt="">
+                <a href="#">Quốc Hoàng</a>
+
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Sách này có bản cho kindle không ạ?</span>
+              </div>
+            </div>
+          </div>
+          <div class="product_detail_binhluan">
+
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar3.png" alt="">
+                <a href="#">Hồng Đạt</a>
+
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Sách hay quá, sắp tới sẽ mua.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>LIÊN HỆ</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+            <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>LIÊN KẾT</h3>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tất cả sản phẩm</a></li>
+            <li><a href="#">Lập trình web</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Giải thuật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>ĐĂNG KÝ NHẬN TIN</h3>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input id="emailNhanTin" type="text" class="form-control" placeholder="Enter your email">
+            <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+          </div>
+          <div class="mangXaHoi">
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <div class="fanpage">
+            <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
+              nonce="7nroEQad"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
+              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <ul class="contact-bar">
+    <li class="facebook">
+      <a href="https://m.me" target="_blank" rel="nofollow"></a>
+    </li>
+    <li class="zalo">
+      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
+    </li>
+  </ul>
+
+  <!-- Modal -->
+  <div class="modal fade" id="thongTinCart">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Sách</th>
+                <th scope="col"></th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th>1</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/clean-code.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <a href="./shoping-cart.html" type="button" class="btn btn-primary">Đến giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/pro-detail.js"></script>
+</body>
+
+</html>

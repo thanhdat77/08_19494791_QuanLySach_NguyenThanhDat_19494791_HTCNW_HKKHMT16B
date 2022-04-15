@@ -1,0 +1,55 @@
+.background {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("/Custom/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.user-img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 4px #ccc;
+    margin: 20px;
+}
+
+.box {
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.forgot {
+    margin-top: 20px;
+}
+
+.form-control, .btn {
+    border-radius: 20px;
+}
+
+.notify-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(204, 204, 204, 0.3);
+    display: none;
+}
+
+.notify {
+    background-color: white;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 5px;
+}

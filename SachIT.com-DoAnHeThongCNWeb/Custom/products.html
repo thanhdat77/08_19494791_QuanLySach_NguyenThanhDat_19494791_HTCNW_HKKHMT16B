@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tất cả sản phẩm</title>
+  <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <script src="../jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="../bootstrap-4.6.0-dist/js/bootstrap.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="../Custom/assets/css/style.css">
+  <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <link rel="stylesheet" href="./assets/css/shoping-cart.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="mb-3">
+    <div class="container">
+      <div class="row align-items-center text-md-center">
+        <!-- Home image -->
+        <div class="col-md-1">
+          <a href="./index.html" class="home-link">
+            <img src="./images/logo.png" alt="" class="heading-img bg-white">
+          </a>
+        </div>
+        <!-- Category -->
+        <div class="col-md-1 position-relative">
+          <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fas fa-bars text-white"></i>
+            <span class="text-white span-text">Danh mục</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Tất cả sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Lập trình web</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Giải thuật</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search box -->
+        <div class="col-md-8">
+          <div class="search-box">
+            <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
+            <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
+          </div>
+        </div>
+        <!-- User -->
+        <div class="col-md-1">
+          <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleUser">
+            <i class="far fa-user text-white"></i>
+            <span class="text-white span-text">Tài khoản</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a href="account.html" class="btn btn-warning">Thông tin tài khoản</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="btn btn-primary">Về chúng tôi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="col-md-1">
+          <a data-toggle="modal" data-target="#thongTinCart" id="btn-cart" href="shoping-cart.html" class="box-link position-relative d-inline-block">
+            <span class="cart">
+              <i class="fas fa-shopping-cart text-white">
+              </i>
+              <span id="num-cart" class="number">3</span>
+            </span>
+            <span class="text-white span-text">Giỏ hàng</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 product_sidebar">
+        <h2 class="danhmuc">DANH MỤC</h2>
+        <ul class="list-group">
+          <a href="./products.html">
+            <li class="list-group-item">Tất cả sản phẩm</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Sản phẩm bán chạy</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Ngôn ngữ lập trình</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Trí tuệ nhân tạo</li>
+          </a>
+        </ul>
+        <img class="left-img-ad" src="../Custom/images/love-book.jpg" alt="">
+        <img class="left-img-ad" src="../Custom/images/love-book2.png" alt="">
+      </div>
+      <div class="col-md-9">
+
+        <!-- PRODUCTS -->
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product ">
+              <div class="block_product_img">
+                <img src="../Custom/images/code-dao-ki-su.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Code dạo ký sự
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    200.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/clean-code.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    The clean code
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    169.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/gian-diep-mang.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Gián điệp mạng
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/lieu-it-da-het-thoi.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Liệu IT đã hết thời?
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Lược sử hacker.
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/the-design-of-everyday-things.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    The design of everyday things
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/nghe_thuat_an_minh.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Nghệ thuật ẩn mình.
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/how-technology-works.jpg" alt="IMG-PRODUCT">
+
+                <a href="product-detail.html" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    How technology works?
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>LIÊN HỆ</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+            <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>LIÊN KẾT</h3>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tất cả sản phẩm</a></li>
+            <li><a href="#">Lập trình web</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Giải thuật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>ĐĂNG KÝ NHẬN TIN</h3>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input id="emailNhanTin" type="text" class="form-control" placeholder="Enter your email">
+            <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+          </div>
+          <div class="mangXaHoi">
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <div class="fanpage">
+            <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
+              nonce="7nroEQad"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
+              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="thongTinCart">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Sách</th>
+                <th scope="col"></th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th>1</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/clean-code.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <a href="./shoping-cart.html" type="button" class="btn btn-primary">Đến giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="contact-bar">
+    <li class="facebook">
+      <a href="https://m.me" target="_blank" rel="nofollow"></a>
+    </li>
+    <li class="zalo">
+      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
+    </li>
+  </ul>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
