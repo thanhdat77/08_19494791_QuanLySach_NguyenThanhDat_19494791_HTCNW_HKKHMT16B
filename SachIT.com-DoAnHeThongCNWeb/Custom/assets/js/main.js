@@ -1,6 +1,6 @@
 var account = [
     {
-        uname: "hongdat",
+        uname: "ThanhDat",
         pwd: "12345678"
     },
 ];

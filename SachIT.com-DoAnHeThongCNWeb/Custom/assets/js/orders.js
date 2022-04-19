@@ -7,12 +7,12 @@ var data = [
 ]
 
 var account = {
-    uname : "Nguyen Hong Dat",
+    uname : "Nguyen Thanh Dat",
     pwd : "12345",
     address : "TP. HCM",
     email: "abcd@gmail.com",
     sex: true,
-    phone : "0965875412",
+    phone : "0384747902",
     birthday: ""
 }
 
